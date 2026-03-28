@@ -1,0 +1,135 @@
+{
+  "accuracy": 0.9192,
+  "per_class": {
+    "dyed-lifted-polyps": {
+      "precision": 0.9592,
+      "recall": 0.9353,
+      "f1": 0.9471,
+      "support": 201
+    },
+    "dyed-resection-margins": {
+      "precision": 0.9507,
+      "recall": 0.9602,
+      "f1": 0.9554,
+      "support": 201
+    },
+    "esophagitis": {
+      "precision": 0.786,
+      "recall": 0.8408,
+      "f1": 0.8125,
+      "support": 201
+    },
+    "normal-cecum": {
+      "precision": 0.9431,
+      "recall": 0.99,
+      "f1": 0.966,
+      "support": 201
+    },
+    "normal-pylorus": {
+      "precision": 0.995,
+      "recall": 0.995,
+      "f1": 0.995,
+      "support": 201
+    },
+    "normal-z-line": {
+      "precision": 0.8289,
+      "recall": 0.7711,
+      "f1": 0.799,
+      "support": 201
+    },
+    "polyps": {
+      "precision": 0.9836,
+      "recall": 0.8955,
+      "f1": 0.9375,
+      "support": 201
+    },
+    "ulcerative-colitis": {
+      "precision": 0.9151,
+      "recall": 0.9652,
+      "f1": 0.9395,
+      "support": 201
+    }
+  },
+  "confusion_matrix": [
+    [
+      188,
+      10,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      8,
+      193,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      169,
+      0,
+      0,
+      32,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      199,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      45,
+      0,
+      0,
+      155,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      180,
+      15
+    ],
+    [
+      0,
+      0,
+      1,
+      5,
+      1,
+      0,
+      0,
+      194
+    ]
+  ]
+}

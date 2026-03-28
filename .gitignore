@@ -29,6 +29,7 @@ data/
 gi-disease-enhancement/data
 # Results
 results/
+gi-disease-enhancement/results
 
 # Environment
 .env
