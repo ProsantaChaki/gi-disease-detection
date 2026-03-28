@@ -214,20 +214,9 @@ Each experiment produces:
 
 ---
 
-## Team Roles
-
-| Member | Role | Responsibilities |
-|--------|------|-----------------|
-| **Member 1** | Project Lead / Enhancement | Enhancement pipeline, adaptive parameter tuning, quality assessment |
-| **Member 2** | Classification / Training | ResNet-50 architecture, training loop, hyperparameter tuning |
-| **Member 3** | Data / Evaluation | Dataset preparation, degradation pipeline, evaluation metrics |
-| **Member 4** | Experiments / Visualization | Experiment scripts, ablation study, result visualization, documentation |
-
----
-
 ## Citation
 
-If you use the Kvasir dataset, please cite:
+We use the Kvasir dataset, please cite:
 
 ```bibtex
 @inproceedings{pogorelov2017kvasir,
