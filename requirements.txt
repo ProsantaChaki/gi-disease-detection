@@ -1,0 +1,45 @@
+# =============================================================================
+# GI Disease Classification with Image Enhancement
+# =============================================================================
+
+# Core Deep Learning
+tensorboard>=2.13.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image Processing
+albumentations>=1.3.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+scikit-image>=0.21.0
+
+# Image Quality Assessment
+pyiqa>=0.1.7
+
+# Machine Learning & Data Science
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.14.0
+seaborn>=0.12.0
+
+# Configuration & Utilities
+python-dotenv>=1.0.0
+PyYAML>=6.0
+tqdm>=4.65.0
+
+# Jupyter & Notebooks
+ipywidgets>=8.0.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Optional (uncomment if needed)
+# grad-cam>=1.4.0          # Explainability / Grad-CAM visualizations
+# onnx>=1.14.0             # Model export to ONNX format
+# onnxruntime>=1.15.0      # ONNX inference runtime
+# timm>=0.9.0              # PyTorch Image Models (extra architectures)
+# wandb>=0.15.0            # Experiment tracking

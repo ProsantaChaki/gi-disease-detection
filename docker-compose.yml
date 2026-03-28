@@ -1,0 +1,29 @@
+services:
+  dev:
+    build: .
+    shm_size: '2gb'
+    volumes:
+      - ./gi-disease-enhancement/data:/workspace/data
+      - ./gi-disease-enhancement/results:/workspace/results
+      - ./gi-disease-enhancement/notebooks:/workspace/notebooks
+      - ./gi-disease-enhancement/src:/workspace/src
+      - ./gi-disease-enhancement/scripts:/workspace/scripts
+      - ./gi-disease-enhancement/configs:/workspace/configs
+      - ./gi-disease-enhancement/experiments:/workspace/experiments
+    ports:
+      - "8888:8888"
+      - "6006:6006
+    stdin_open: true
+    tty: true
+    # Uncomment the block below if you have NVIDIA Container Toolkit installed:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+    command: >
+      bash -c "jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' &
+               tensorboard --logdir=/workspace/results --host=0.0.0.0 --port=6006 &
+               wait"
